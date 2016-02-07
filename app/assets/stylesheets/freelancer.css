@@ -6,6 +6,10 @@
 
 body {
     overflow-x: hidden;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #2c3e50;
 }
 
 p {
@@ -32,8 +36,8 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 200;
 }
 
 hr.star-light,
@@ -81,8 +85,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: #6c7576;
+    background: #FFF;
 }
 
 header .container {
@@ -97,11 +101,12 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 4.75em;
+    font-weight: 200;
 }
+
 
 header .intro-text .skills {
     font-size: 1.25em;
@@ -132,10 +137,12 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 4em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        font-family: 'Lovers Quarrel', cursive;
+        font-weight: 400;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -143,14 +150,16 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 }
 
 .navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    min-height: 60px;
+    margin-bottom: 21px;
 }
 
 .navbar a:focus {
@@ -161,27 +170,43 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #999999;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    line-height: 21px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
 .navbar .navbar-nav li a:focus {
     outline: 0;
+    color: #384142
 }
 
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    background-color: #FFFFFF;
+    border-color: transparent;
 }
 
 section {
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
 section h2 {
-    margin: 0;
+    margin-bottom: 50px;
     font-size: 3em;
 }
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: rgba(100%,50%,0%,.6);
 }
 
 section.success a,
@@ -220,7 +245,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(100%,50%,0%,.6);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -406,7 +431,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content h2 {
-    margin: 0;
+    margin: 50px;
     font-size: 3em;
 }
 
@@ -456,4 +481,51 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 340px;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+}
+
+.navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.col-center {
+   float: none !important;
+   margin-right: auto !important;
+   margin-left: auto !important;
+}
+
+.btn-success {
+    color: #ffffff;
+    background-color: rgba(100%,50%,0%,.6);
+    border-color: #e7e7e7;
+}
+
+.btn-success:hover {
+    color: #ffffff;
+    background-color: #FF7F00;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: rgba(100%,50%,0%,.4);
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    padding: 18px 27px;
+    font-size: 19px;
+    line-height: 1.3333333;
+    border-radius: 6px;
 }
